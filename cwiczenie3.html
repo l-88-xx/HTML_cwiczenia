@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+  <meta name="Description" content="Strona poświęcoana zajęciom www"/>
+  <meta name="Keywords" content="WWW;test"/>
+  <meta name="Author" content="LM"/>
+  <title>Ćwiczenie 3</title>
+  <link rel="stylesheet" href="layout.css">
+  <script src="script.js"></script>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-auto-rows: 100px;
+      gap: 20px;
+      width: max-content;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .c1 { background-color: yellow; }
+    .c2 { background-color: yellowgreen; }
+    .c3 { background-color: lightgreen; }
+    .c4 { background-color: green; }
+
+    .img-box {
+      width: 100px;
+      height: 100px;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b9/Morasko_leg.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .c3 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .c4 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .img-box {
+      grid-column: 3;
+      grid-row: 2;
+    }
+  </style>
+
+</head>
+<body>
+
+<h1>kwadraty</h1>
+
+<div class="container">
+  <div class="box c1"></div>
+  <div class="box c2"></div>
+  <div class="box c3"></div>
+  <div class="box c4"></div>
+  <div class="img-box"></div>
+</div>
+
+</body>
+</html>
